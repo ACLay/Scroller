@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Scroller</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="scroll_speed_label">Scroll speed:</string>
+    <string name="text_color_label">Text color:</string>
+    <string name="text_label">Text:</string>
+    <string name="bg_color_label">Background color:</string>
+    <string name="auto_scroll_label">Auto-scroll:</string>
+    <string name="Scroll_Button">Update</string>
+    <string name="Menu_button">Settings</string>
+    <string name="title_activity_menu_">Scroller Settings</string>
+    <string name="color_hint">i can haz hex?</string>
+
+</resources>

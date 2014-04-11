@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu_Activity"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_layout" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:text="@string/text_label"
+				android:textColor="#33B5E5"/>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/scroll_text_box"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:text="@string/hello_world"
+                android:textColor="#33B5E5" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_layout"
+            android:id="@+id/text_color_layout" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_color_label"
+                android:textColor="#33B5E5" />
+
+            <EditText
+                android:id="@+id/text_color_box"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:textColor="#33B5E5"
+				android:hint="@string/color_hint" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bg_color_layout"
+            android:layout_below="@id/text_color_layout" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bg_color_label"
+                android:textColor="#33B5E5" />
+            <EditText
+                android:id="@+id/bg_color_box"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:textColor="#33B5E5"
+				android:hint="@string/color_hint" />
+        </LinearLayout>
+                
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/auto_scroll_layout"
+            android:layout_below="@id/bg_color_layout" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/auto_scroll_label"
+                android:textColor="#33B5E5" />
+            <CheckBox
+                android:id="@+id/auto_checkbox"
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+        </LinearLayout>
+        
+        <LinearLayout
+			android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scroll_speed_layout"
+            android:layout_below="@id/auto_scroll_layout" >
+            <TextView
+            	android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scroll_speed_label"
+                android:textColor="#33B5E5" />
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/scroll_speed_box"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                android:textColor="#33B5E5" />
+        </LinearLayout>
+        
+        <Button 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/scroll_speed_layout"
+            android:text="@string/Scroll_Button"
+            android:onClick="scrollText"/>
+        
+    </RelativeLayout>
+
+</ScrollView>
